@@ -1,0 +1,202 @@
+.gridContainer {
+    display: grid;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: stretch;
+    grid-gap: 20px;
+}
+
+p {
+    font-family: Lobster, Arial, sans-serif;
+    color: #79A8B0;
+}
+
+.gridCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 50px 0px;
+    background-color: pink;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #8ACDD7;
+    border-width: 5px;
+}
+
+.button {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 900;
+    color: #FC6Fa7;
+    background-color: #8ACDD7;
+    border: 2px solid #FF90BC;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 5px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #FF90BC;
+    color: #8ACDD7;
+    border: 2px solid #FC6Fa7;
+}
+
+.imageContainer {
+    max-width: 20vw;
+    height: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+    .imageContainer {
+        min-width: 150px;
+        min-height: 150px;
+    }
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+.month {
+    font-size: 3.5vw;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 680px) {
+    .month {
+        font-size: 20px;
+    }
+}
+
+.imageLocation {
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: 5px 0px 10px 0px; 
+    margin: 0px;
+}
+
+@media screen and (max-width: 980px) {
+    .imageLocation {
+        font-size: 12px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+.overlayContent {
+    position: relative;
+    width: 70%;
+    margin: 15% auto;
+    padding: 0px;
+    border: 3px solid #8ACDD7;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #8ACDD7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.overlayImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlayCaptionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F9F9E0;
+    color: #8ACDD7;
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid #8ACDD7;
+}
+
+.overlayCaption {
+    padding: 18px 10px 15px 10px;
+}
+
+.overlayClose {
+    position: absolute;
+    background-color: #8ACDD7;
+    border-radius: 10%;
+    border: none;
+    top: 0;
+    right: 0;
+    color: #F9F9E0;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.overlayClose:hover {
+    color: #FFD4FE;
+    background-color: #4D98A3;
+    cursor: pointer;
+}
+
+/* overlay right and left are in the first column of the grid */
+.overlayButtonRight {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border: none;
+    background-color: #8ACDD7;
+    border-radius: 10%;
+    color: #F9F9E0;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.overlayButtonRight:hover {
+    color: #FFD4FE;
+    background-color: #4D98A3;
+    cursor: pointer;
+}
+
+.overlayButtonLeft {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border: none;
+    background-color: #8ACDD7;
+    border-radius: 10%;
+    color: #F9F9E0;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.overlayButtonLeft:hover {
+    color: #FFD4FE;
+    background-color: #4D98A3;
+    cursor: pointer;
+}

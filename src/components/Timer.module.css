@@ -1,0 +1,14 @@
+.timer {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8vw;
+    width: 60%;
+    height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 5px solid #8ACDD7;
+    border-radius: 10px;
+}
