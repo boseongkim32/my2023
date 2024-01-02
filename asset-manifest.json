@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/boseongkim32/my2023/static/css/main.6a301fa3.css",
-    "main.js": "/boseongkim32/my2023/static/js/main.deadb09c.js",
-    "index.html": "/boseongkim32/my2023/index.html",
-    "main.6a301fa3.css.map": "/boseongkim32/my2023/static/css/main.6a301fa3.css.map",
-    "main.deadb09c.js.map": "/boseongkim32/my2023/static/js/main.deadb09c.js.map"
+    "main.css": "/static/css/main.6a301fa3.css",
+    "main.js": "/static/js/main.deadb09c.js",
+    "index.html": "/index.html",
+    "main.6a301fa3.css.map": "/static/css/main.6a301fa3.css.map",
+    "main.deadb09c.js.map": "/static/js/main.deadb09c.js.map"
   },
   "entrypoints": [
     "static/css/main.6a301fa3.css",
