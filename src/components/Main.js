@@ -35,7 +35,7 @@ const Grid = ({month, description, toggleOverlay}) => {
         <div className={styles.gridCard}>
             <p className={styles.month}> {month} </p>
             <div className={styles.imageContainer}>
-                <img className={styles.image} src={`./${month}0.jpg`} alt={`${month}`}/>
+                <img className={styles.image} src={`/${month}0.jpg`} alt={`${month}`}/>
             </div>
             <p className={styles.imageLocation}> {description} </p>
             <button className={styles.button} onClick={() => toggleOverlay(month)}> Details </button>
@@ -62,7 +62,7 @@ const Overlay = ({month, toggleOverlay}) => {
         <div className={styles.overlay}>
             <div className={styles.overlayContent}>
                 <div className={styles.overlayImageContainer}>
-                    <img className={styles.overlayImage} src={`./${month}${overlayIndex}.jpg`} alt={`${month}`}/>
+                    <img className={styles.overlayImage} src={`/${month}${overlayIndex}.jpg`} alt={`${month}`}/>
                 </div>
                 <div className={styles.overlayCaptionContainer}>
                     <p className={styles.overlayCaption}> {captions[`${month}${overlayIndex}`]} </p>
