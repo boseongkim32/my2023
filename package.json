@@ -1,8 +1,8 @@
 {
   "name": "tutorial",
   "version": "0.1.0",
-  "private": true,
-    "homepage": "http://github.com/boseongkim32/my2023",
+  "private": false,
+    "homepage": "http://boseongkim32.github.io/my2023",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
     "@testing-library/jest-dom": "^5.17.0",
